@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+    
+
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h3 class="js-calculation calculation"></h3>
+    <h3 class="result"></h3>
+    <p>
+      <button onclick="
+        updateCalculation('1');
+        displayCalculation();
+        console.log(calculation);
+      ">1</button>
+
+      <button onclick="
+        updateCalculation('2');
+        displayCalculation();
+        console.log(calculation);
+      ">2</button>
+
+      <button onclick="
+        updateCalculation('3');
+        displayCalculation();
+        console.log(calculation);
+      ">3</button>
+
+      <button class="operator" onclick="
+        updateCalculation('+');
+        displayCalculation();
+        console.log(calculation);
+      ">+</button>
+    </p>
+
+    <p>
+      <button onclick="
+        updateCalculation('4');
+        displayCalculation();
+        console.log(calculation);
+      ">4</button>
+
+      <button onclick="
+        updateCalculation('5');
+        displayCalculation();
+        console.log(calculation);
+      ">5</button>
+
+      <button onclick="
+        updateCalculation('6');
+        displayCalculation();
+        console.log(calculation);
+      ">6</button>
+
+      <button class="operator" onclick="
+        updateCalculation('-');
+        displayCalculation();
+        console.log(calculation);
+      ">-</button>
+    </p>
+
+    <p>
+      <button onclick="
+        updateCalculation('7');
+        displayCalculation();
+        console.log(calculation);
+      ">7</button>
+
+      <button onclick="
+        updateCalculation('8');
+        displayCalculation();
+        console.log(calculation);
+      ">8</button>
+
+      <button onclick="
+        updateCalculation('9');
+        displayCalculation();
+        console.log(calculation);
+      ">9</button>
+
+      <button class="operator" onclick="
+        updateCalculation('*');
+        displayCalculation();
+        console.log(calculation);
+      ">*</button>
+    </p>
+
+    <p>
+      <button onclick="
+        updateCalculation('0');
+        displayCalculation();
+        console.log(calculation);
+      ">0</button>
+
+      <button onclick="
+        updateCalculation('.');
+        displayCalculation();
+        console.log(calculation);
+      ">.</button>
+
+      <button onclick="
+        let result = eval(localStorage.getItem('calculation')) || 0;
+        
+        document.querySelector('.result').innerHTML = result;
+      ">=</button>
+
+      <button class="operator" onclick="
+        updateCalculation('/');
+        displayCalculation();
+        console.log(calculation);
+      ">/</button>
+    </p>
+
+    <button class="clear" onclick="
+      localStorage.removeItem('calculation');
+      console.log('Cleared.');
+    ">Clear</button>
+  </div>
+
+  
+  <script src="script.js">
+    
+  </script>
+</body>
+
+</html>
